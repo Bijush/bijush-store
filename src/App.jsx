@@ -21,12 +21,14 @@ function App() {
 
   return (
     <Router>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
     </Router>
   )
 }
