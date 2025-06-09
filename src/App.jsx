@@ -20,7 +20,7 @@ function App() {
   }, [darkMode])
 
   return (
-    <Router>
+    <Router basename="/bijush-store">
       <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
